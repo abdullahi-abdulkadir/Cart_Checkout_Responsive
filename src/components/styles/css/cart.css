@@ -520,6 +520,13 @@ button:focus-visible {
   }
 }
 
+/* @media screen and (max-width: 500px){
+.card-feature{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red
+}
+} */
 
 
 
