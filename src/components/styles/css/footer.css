@@ -179,7 +179,7 @@ ul > li {
       text-align: right;
       font-weight: bold;
       font-family: inter;
-    
+     margin-top: -1rem;
     }
     .my-footer-right ul li a{
       color: #fff;

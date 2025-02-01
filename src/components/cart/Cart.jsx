@@ -70,14 +70,20 @@ const Cart = () => {
                       </button>
                     </div>
                     <div className="columns">
-                      <ul>
-                       
-                         
+                    
+                    <div className="quntity-wrapper">
+                     
+                      {/* <div className="quantity-button"> */}
+                      <button className="customer-option">{quantity}</button>  
+                      <button className="customer-option" onClick={quantIncrement}>+</button>  
+                      <button className="customer-option" onClick={quantDecrement}>-</button> 
+                      {/* </div> */}
                   
+                    </div>
+                    
+                      <ul className="customer-option-wrapper">       
                         <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
                         <li className="customer-option">REMOVE</li>
-                        <li className="customer-option" onClick={quantIncrement}>+</li>  
-                        <li className="customer-option" onClick={quantDecrement}>-</li> 
                       </ul>
                     </div>
                   </div>
@@ -88,50 +94,12 @@ const Cart = () => {
         </div>
         <div className="card-feature">
           <div className="my-image-cover">
-            <img src={Fila} alt="fila" />
+            <img src={Fila} alt="cloths" />
           </div>
           <div className="container">
             <div className="row my-row">
               <div className="col-lg-12 text-content">
                 <h1>FILA WEARS</h1>
-                <p>
-                  Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
-                  deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh .
-                </p>
-              </div>
-              <div className="col-lg-6">
-                <div className="my-option">
-                  <div className="size-options">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                    <div>
-                      <button type="button" className="btn customer-size" onClick={customSize} >
-                        CUSTOM SIZE
-                      </button>
-                    </div>
-                    <div className="columns">
-                      <ul>
-                        {/* <li className="customer-option">ADD TO CART</li> */}
-                        <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
-                        <li className="customer-option">REMOVE</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card-feature">
-          <div className="my-image-cover">
-            <img src={Gown} alt="gwon" />
-          </div>
-          <div className="container">
-            <div className="row my-row">
-              <div className="col-lg-12 text-content">
-                <h1>GOWN WAVE</h1>
                 <p>
                   Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
                   deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh.
@@ -150,9 +118,19 @@ const Cart = () => {
                       </button>
                     </div>
                     <div className="columns">
-                      <ul>
-                        {/* <li className="customer-option">ADD TO CART</li> */}
-                        <li className="customer-option" onClick={checkOut} >CHECKOUT</li>
+                    
+                    <div className="quntity-wrapper">
+                     
+                      {/* <div className="quantity-button"> */}
+                      <button className="customer-option">{quantity}</button>  
+                      <button className="customer-option" onClick={quantIncrement}>+</button>  
+                      <button className="customer-option" onClick={quantDecrement}>-</button> 
+                      {/* </div> */}
+                  
+                    </div>
+                    
+                      <ul className="customer-option-wrapper">       
+                        <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
                         <li className="customer-option">REMOVE</li>
                       </ul>
                     </div>
@@ -162,6 +140,59 @@ const Cart = () => {
             </div>
           </div>
         </div>
+        <div className="card-feature">
+          <div className="my-image-cover">
+            <img src={Gown} alt="Abaya" />
+          </div>
+          <div className="container">
+            <div className="row my-row">
+              <div className="col-lg-12 text-content">
+                <h1>GOWN WEARS</h1>
+                <p>
+                  Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
+                  deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh.
+                </p>
+              </div>
+              <div className="col-lg-6">
+                <div className="my-option">
+                  <div className="size-options">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <div>
+                      <button type="button" className="btn customer-size" onClick={customSize} >
+                        CUSTOM SIZE
+                      </button>
+                    </div>
+                    <div className="columns">
+                    
+                    <div className="quntity-wrapper">
+                     
+                      {/* <div className="quantity-button"> */}
+                      <button className="customer-option">{quantity}</button>  
+                      <button className="customer-option" onClick={quantIncrement}>+</button>  
+                      <button className="customer-option" onClick={quantDecrement}>-</button> 
+                      {/* </div> */}
+                  
+                    </div>
+                    
+                      <ul className="customer-option-wrapper">       
+                        <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
+                        <li className="customer-option">REMOVE</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+       
+
+     
       </section>
     </main>
   );
