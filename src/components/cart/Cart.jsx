@@ -9,7 +9,7 @@ const Cart = () => {
 
   let checkoutRedir = useNavigate();
   let customRedir = useNavigate();
-
+  let homeRedir = useNavigate();
   const checkOut = () => {
     checkoutRedir("/checkout");
    
@@ -19,6 +19,7 @@ const Cart = () => {
      customRedir('/customsize');
    }
    
+
    
    const [products, setProducts] = useState([
     { id: 1, quantity: 1, image: Agbada, title: 'AGBADA WEARS' },
@@ -56,6 +57,16 @@ const removeItem = (id) => {
 };
 
 
+
+
+
+
+
+
+
+
+
+
   return (
     <main style={{ overflowY: 'scroll ', height: '100vh' }}>
       <section className="section-contents">
@@ -67,56 +78,63 @@ const removeItem = (id) => {
           <button type="button" className="btn-resize">DELIVERED</button>
         </div>
 
-        {products.map((product) => (
-          <div className="card-feature" key={product.id}>
-            <div className="my-image-cover">
-              <img src={product.image} alt="tshirt" />
-            </div>
-            <div className="container">
-              <div className="row my-row">
-                <div className="col-lg-12 text-content">
-                  <h1>{product.title}</h1>
-                  <p>
-                    Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
-                    deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh.
-                  </p>
+
+
+
+
+        {products.length === 0 ? (
+  <div className="empty-cart" >
+    <h2>Your cart is empty.</h2>
+    <p>Start shopping to add items to your cart!</p>
+    <button onClick={() => homeRedir("/")}>Go home</button>
+  </div>
+) : (
+  products.map((product) => (
+    <div className="card-feature" key={product.id}>
+      <div className="my-image-cover">
+        <img src={product.image} alt="tshirt" />
+      </div>
+      <div className="container">
+        <div className="row my-row">
+          <div className="col-lg-12 text-content">
+            <h1>{product.title}</h1>
+            <p>
+              Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
+              deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh.
+            </p>
+          </div>
+          <div className="col-lg-6">
+            <div className="my-option">
+              <div className="size-options">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+                <div>
+                  <button type="button" className="btn customer-size" onClick={customSize}>
+                    CUSTOM SIZE
+                  </button>
                 </div>
-                <div className="col-lg-6">
-                  <div className="my-option">
-                    <div className="size-options">
-                      <span>S</span>
-                      <span>M</span>
-                      <span>L</span>
-                      <span>XL</span>
-                      <div>
-                        <button type="button" className="btn customer-size" onClick={customSize} >
-                          CUSTOM SIZE
-                        </button>
-                      </div>
-                      <div className="columns">
-                    
-                      <div className="quntity-wrapper">
-                       
-                        {/* <div className="quantity-button"> */}
-                        <button className="customer-option">{product.quantity}</button>  
-                        <button className="customer-option" onClick={() => quantIncrement(product.id)}>+</button>  
-                        <button className="customer-option" onClick={() => quantDecrement(product.id)}>-</button> 
-                        {/* </div> */}
-                  
-                      </div>
-                    
-                        <ul className="customer-option-wrapper">       
-                          <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
-                          <li className="customer-option" onClick={() => removeItem(product.id)}>REMOVE</li>
-                        </ul>
-                      </div>
-                    </div>
+                <div className="columns">
+                  <div className="quntity-wrapper">
+                    <button className="customer-option">{product.quantity}</button>
+                    <button className="customer-option" onClick={() => quantIncrement(product.id)}>+</button>
+                    <button className="customer-option" onClick={() => quantDecrement(product.id)}>-</button>
                   </div>
+                  <ul className="customer-option-wrapper">
+                    <li className="customer-option" onClick={checkOut}>CHECKOUT</li>
+                    <li className="customer-option" onClick={() => removeItem(product.id)}>REMOVE</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+      </div>
+    </div>
+  ))
+)}
+
       </section>
     </main>
   );
