@@ -4,7 +4,7 @@ import '../styles/css/checkout.css';
 import Arrow from '../../assets/images/iconsimages/Arrow.png';
 import Card from '../../assets/images/checkoutimages/Card.png';
 import Bitcoin from '../../assets/images/checkoutimages/Bitcoin.png';
-import Paypal from '../../assets/images/checkoutimages/Paypal.png';
+import Paypal from '../../assets/images/checkoutimages/PayPal.png';
 import Background from '../../assets/images/logos/Background_tailo_logo.png'
 
 const Checkout = () => {
