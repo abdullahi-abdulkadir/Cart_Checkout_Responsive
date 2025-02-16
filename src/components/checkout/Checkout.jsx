@@ -47,7 +47,7 @@ const Checkout = () => {
         <fieldset>
           <legend>Delivery Details</legend>
           <div className="fourth-input">
-          <label className='label-4'>Name of Receiver: <input type="text" id="nameofReceiver" name="nameofReceiver" placeholder=' Ogedembge Julius Ayo' />
+          <label className='label-4'>Receiver Name: <input type="text" id="nameofReceiver" name="nameofReceiver" placeholder=' Ogedembge Julius Ayo' />
           </label>
           </div>
         

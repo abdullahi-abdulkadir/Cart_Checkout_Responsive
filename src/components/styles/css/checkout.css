@@ -48,7 +48,7 @@ line-height: 30.26px;
 letter-spacing: 0%;
 text-align: center;
 padding-right: 1rem;
-text-transform: uppercase;
+
 
 
 } 
@@ -71,7 +71,11 @@ align-self: left;
     margin-top: 3.3rem;
  
  }
-
+input#productName, #productSize, #productQuantity, #nameofReceiver, #address, #phone, select{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+   
+}
 .checkout h1{
 
 color: #F8444F;
@@ -136,6 +140,7 @@ margin-left: 7rem;
     margin-left: 12rem;
     width: 55vw;
     height: 101px;
+    opacity: 0.5;
 }
 
 .checkout .label-7 p{
@@ -223,10 +228,14 @@ fieldset{
 .checkout select{
     height: 73px;
 }
-}
+
 .image-group img{
     margin-top: 2rem;
 }
+
+}
+
+
 
 
 
@@ -262,9 +271,16 @@ fieldset{
     legend{
         max-width: fit-content;
         height: fit-content;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         padding: unset;
         font-weight: bold;
+        padding: 0 0.2rem;
+    }
+    legend:nth-of-type(1) {
+        background: #fff;
+    }
+    legend:not(1) {
+        background: #D9D9D9 !important;
     }
     .checkout .order-id, .checkout h1{
         font-size: small;
@@ -302,15 +318,11 @@ fieldset{
         margin-bottom: -2rem;
         margin-top: -1rem;
     }
-    /*.checkout .label-1{
-     margin-left: 0.1px;
+    input#productName, #productSize, #productQuantity, #nameofReceiver, #address, #phone{
+        font-size: 1.2rem;
+        padding-left: 1rem;
+       
     }
-    .checkout .label-2{
-        margin-left: 10px;
-    }
-    .checkout .label-3{
-        margin-right: 0.1px;
-    } */
     }
 
 
@@ -322,8 +334,21 @@ fieldset{
       
     }
     .checkout form label{
-        font-size: 8px;
+        font-size: 10px;
+        font-weight: bolder;
         overflow: clip;
+    }
+    .checkout  .label-7{
+        margin-left: -1.5rem !important;
+    }
+    div.image-group img{
+        margin-top: 1rem !important;
+        margin-bottom: -3rem !important;
+    }
+    input#productName, #productSize, #productQuantity, #nameofReceiver, #address, #phone{
+        font-size: 16px;
+        padding-left: 1rem;
+       
     }
    }
 
