@@ -11,8 +11,9 @@ const Cart = () => {
   let customRedir = useNavigate();
   let homeRedir = useNavigate();
   const checkOut = () => {
+    
     checkoutRedir("/checkout");
-   
+    // document.querySelector('#nav').classList.add('nav-hide');
   }
 
    const customSize = () =>{
@@ -106,10 +107,10 @@ const removeItem = (id) => {
           <div className="col-lg-6">
             <div className="my-option">
               <div className="size-options">
-                <span>S</span>
+                {/* <span>S</span>
                 <span>M</span>
                 <span>L</span>
-                <span>XL</span>
+                <span>XL</span> */}
                 <div>
                   <button type="button" className="btn customer-size" onClick={customSize}>
                     CUSTOM SIZE

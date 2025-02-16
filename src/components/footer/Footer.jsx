@@ -85,7 +85,7 @@ const Footer = () => {
         </form>
       </div>
 
-      <div class="my-footer-mobile">
+      <div className="my-footer-mobile">
         <div className="my-footer-left">
           <ul>
             <li>

@@ -17,7 +17,7 @@ const App = () => {
     <div style={{ overflowY: 'scroll ', height: '100vh'}}>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        < Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signout" element={<Signout />} />

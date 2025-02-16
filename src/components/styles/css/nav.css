@@ -64,3 +64,10 @@ nav {
     width: 6.2rem;
     height: 1rem;
   }
+
+
+/* .nav-hide{
+ animation: fade-out 1000ms;
+ opacity: 0;
+ border: 1px solid red;
+  } */

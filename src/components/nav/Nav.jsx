@@ -7,7 +7,7 @@ import Menu from '../../assets/images/logos/menu_tailor.png' // Ensure the path 
 
 const Nav = () => {
   return (
-    <nav className="nav">
+    <nav className="nav" id='nav'>
       <ul>
         <li className="menu-left-tab">
           <img src={Menu} alt="Menu" />

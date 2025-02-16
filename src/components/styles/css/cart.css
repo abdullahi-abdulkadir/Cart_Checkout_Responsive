@@ -249,6 +249,10 @@ button:focus-visible {
   margin-bottom: 1rem;
 }
 
+
+
+
+
 @media screen and (max-width: 530px){
   .card-feature{
    .text-content p{
