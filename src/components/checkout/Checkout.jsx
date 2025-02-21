@@ -12,9 +12,9 @@ const Checkout = () => {
 
   return (
     <div className='checkout'>
-      <header className='mobile-header'>
+      {/* <header className='mobile-header'>
            <img src={Background} alt='logo'/>
-      </header>
+      </header> */}
       <h1>Checkout</h1>
       <div className="btns">
         < span onClick={() => navigate("/cart")}> <img id='arrow' src={Arrow} alt="back" /></span>

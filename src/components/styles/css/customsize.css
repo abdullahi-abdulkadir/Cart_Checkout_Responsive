@@ -1,0 +1,408 @@
+.custom-size form {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+
+  color: white;
+  margin-bottom: 1rem;
+  padding: 4rem;
+  border-radius: 10px;
+  border-width: 4px;
+  background: #2b2d42f2;
+  border: 4px solid #fffbfbb2;
+}
+
+form h2 {
+  /* font-family: 'inter';
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: initial;
+    margin-bottom: 2rem; */
+
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.31px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: unset;
+}
+
+form h2 img {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+form span {
+  color: #000;
+  background: #d9d9d999;
+  border-radius: 8px;
+  padding: 0 10px;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
+  letter-spacing: -1%;
+  text-align: center;
+}
+
+form .save-btn {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #F8444F;
+
+  padding: 0.3rem 2rem;
+  width: 191px;
+  height: 52px;
+  border-radius: 9px;
+  
+  color: pointer;
+  font-family: 'Poppins' inter;
+font-weight: 700;
+font-size: 20px;
+line-height: 32.01px;
+letter-spacing: 15%;
+text-align: center;
+
+}
+.sleeves {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+form label {
+  display: flex;
+  justify-content: space-between;
+  padding: unset;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
+  letter-spacing: 0%;
+}
+
+.level-1,
+.level-2,
+.level-3,
+.level-4,
+.level-5,
+.level-6,
+.level-7,
+.level-8,
+.level-9,
+.level-10 {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.level-2 p,
+.level-6 p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24.2px;
+  letter-spacing: -1%;
+}
+
+.custom-size h1 {
+  /* font-family: 'inter';
+    text-align: center;
+    margin-top: -1rem !important;
+    font-size: 2rem;
+    color: #f8444f;
+    margin-bottom: 2rem; */
+
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60.51px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #f8444f;
+}
+
+.custom-btns {
+  padding-left: 4.5rem;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+  cursor: pointer;
+}
+
+/* input[type='range']{
+    width: 100%;
+
+} */
+#capSize,
+#shoeSize {
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #d9d9d999;
+
+
+  /* width: 235px;
+height: 30px; */
+
+
+
+}
+
+.input-center {
+  margin-top: 2rem;
+  /* text-align: center;
+display: block;
+ justify-content: center; */
+}
+
+.others-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#others-input {
+  width: 100%;
+  height: 59px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: #d9d9d9;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15.73px;
+  letter-spacing: -1%;
+}
+
+/* input[type="text"]{
+    width: 10%;
+} */
+
+input[type='range'] {
+  -webkit-appearance: none !important;
+  background: #d3d3d3;
+  width: 100%;
+  height: 6px;
+  background: #d3d3d3 !important;
+  outline: none;
+  border: none;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #000;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* input[type="range"] {
+
+    width: 100%;
+    height: 6px;
+    background: #d3d3d3 !important;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 15px;
+    background: #000 !important;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+  } */
+
+.custom-size h1 .btn {
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d9d9d999;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 0px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #fff;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+@media  screen and (max-width: 980px) {
+  .custom-size h1{
+    font-size: 25px;
+  }
+  form h2{
+    font-size: 16px !important;
+  }
+  form h2 img{
+    width: 30px;
+    margin-left: -0.2rem;
+  }
+  form label{
+    font-size: 15px;
+  }
+  .level-2 p{
+    font-size: 15px;
+    /* margin-left: 1rem; */
+    /* word-break: wrap; */
+  }
+  form span{
+    font-size: 15px;
+  }
+  .input-center h4{
+    font-size: 15px;
+  }
+  button.save-btn{
+    font-size: 15px;
+    margin-bottom: -2rem;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  input[type='range']::-webkit-slider-thumb{
+    height: 20px;
+    width: 35px;
+  }
+  .switch {
+    width: 70px;
+    height: 20px;
+  }
+ 
+  .slider:before {
+    height: 20px;
+    width: 20px;
+  }
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 635px){
+  .custom-size form{
+    width: 90%;
+    padding: 1.5rem;
+    padding-top: 4rem;
+  
+  }
+  button.save-btn{
+    margin-bottom: unset;
+    background: #000;
+    width: 107px;
+height: 27px;
+
+font-family: Inter;
+font-weight: 500;
+font-size: 13px;
+line-height: 15.73px;
+letter-spacing: -1%;
+text-align: center;
+
+  }
+}
+
+
+@media screen and (max-width: 300px){
+  .custom-size h1{
+    font-size: 16px;
+   
+  }
+  form h2{
+    font-size: 10px !important;
+  }
+  .custom-size form{
+    border: unset;
+    border-radius: unset;
+  }
+
+  form label, .level-2 p, .level-6 p{
+font-size: 8px;
+  }
+  form span, .input-center h4{
+    font-size: 8px;
+  }
+
+  .input-center h4{
+    margin-left: 2rem;
+  }
+  button.save-btn{
+    margin-top: -0.5rem;
+  }
+  .level-1, .level-2, .level-3, .level-4, .level-5, .level-6, .level-7, .level-8, .level-9, .level-10 {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+form span{
+  padding: unset !important;
+  border-radius: 5px;
+}
+}
