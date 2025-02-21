@@ -254,6 +254,10 @@ button:focus-visible {
 
 
 @media screen and (max-width: 530px){
+
+  li.menu-left-tab img{
+    padding-left: unset;
+  }
   .card-feature{
    .text-content p{
     font-size: 8px;
@@ -282,7 +286,7 @@ button:focus-visible {
   font-size: xx-small;
   padding: unset ;
   margin-right: 40px;
-  padding: 3px;
+  padding: 6px;
   font-family: inter;
 }
   }
@@ -305,10 +309,7 @@ button:focus-visible {
     word-break: nowrap;
     font-family: inter;
   }
-  .quantity-count{
- /* position: relative;
- left: 20%; */
-  }
+
 
 /* At media responsive tab  i initially start here */
 
