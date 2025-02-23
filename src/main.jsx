@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import "./index.css";
 import ReactDOM from 'react-dom'
-
+// import Cart from "./components/cart/Cart";
 
 createRoot(document.getElementById("root")).render(
   <RecoilRoot>

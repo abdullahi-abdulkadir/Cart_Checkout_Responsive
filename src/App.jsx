@@ -11,7 +11,7 @@ import "./App.css";
 import './index.css'
 import Checkout from "./components/checkout/Checkout";
 import Customesize from "./components/customesize/Customesize";
-
+import OrderSummary from "./components/ordersummary/OrderSummary";
 const App = () => {
   return (
     <div style={{ overflowY: 'scroll ', height: '100vh'}}>
@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/signout" element={<Signout />} />
         <Route path="/checkout" element={<Checkout/>} />
         <Route path="/customsize" element={<Customesize/>} />
+        <Route path="/order-summary" element={<OrderSummary />} />
       </Routes>
       <Footer />
   

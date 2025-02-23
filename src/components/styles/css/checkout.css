@@ -248,8 +248,22 @@ fieldset{
 .mobile-header img{
     display: none;
 }
+
 #btn-danger-pay{
-    display: none;
+    display: block;
+        margin: auto;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background: #f8444f;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 2rem;
+        font-family: inter;
+        text-transform: uppercase;
+        margin-bottom: -2rem;
+        margin-top: -1rem;
 }
 
 @media screen and (max-width: 842px){
@@ -421,8 +435,32 @@ border: unset
     border-radius: 5px;
     overflow: hidden;
 }
-.checkout .btns{
-/* margin-bottom: 2rem; */
-}
+
 }
 
+
+
+
+
+
+
+
+.image-group img {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .image-group img.selected {
+    border: 3px solid #007bff; /* Highlight with blue border */
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 123, 255, 0.2);
+  }
+  
+
+  .error-text {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+  }
+  

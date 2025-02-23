@@ -427,3 +427,10 @@ input[type='range']{
   height: 40px;
 }
 }
+
+
+.error-message {
+  color: red;
+  font-size: 0.6rem;
+  text-align: center;
+}

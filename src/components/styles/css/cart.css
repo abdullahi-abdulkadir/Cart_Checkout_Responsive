@@ -1,6 +1,3 @@
-
-
-
 *,
 *::before,
 ::after {
@@ -34,7 +31,6 @@ main {
 section {
   width: 100%;
 }
-
 
 .sign-out {
   width: 7rem;
@@ -85,7 +81,6 @@ section .cart-title {
   background: #d9d9d999;
   margin-bottom: 0.5rem;
   box-shadow: 4px 4px 4px 4px #0000001a inset;
-  /* box-shadow: -4px -4px 4px 0px #fff9f940 inset; */
   max-width: 18.1rem;
   height: 5.2rem;
   border-radius: 10px;
@@ -108,7 +103,6 @@ section .cart-title {
   margin-bottom: 0.7rem;
   margin-top: 1.4rem;
   max-width: 63rem;
-  /* max-height: 33rem; */
   border-radius: 15px;
   flex: 1;
 }
@@ -144,12 +138,10 @@ section .cart-title {
   padding-right: unset;
   padding-bottom: 0;
   max-height: fit-content;
- 
 }
 .card-feature img {
   max-width: 100%;
   min-height: 94%;
-  /* height: auto; */
   border-radius: 9px;
   flex: 1;
   overflow: hidden;
@@ -186,10 +178,10 @@ section .cart-title {
   text-underline-position: from-font;
   margin-bottom: 3.4rem;
   margin-top: 1rem;
-
 }
-.customer-size:active, .customer-size:focus{
-     background: #f8444f;
+.customer-size:active,
+.customer-size:focus {
+  background: #f8444f;
 }
 .columns {
   margin-top: -2rem;
@@ -207,8 +199,6 @@ button:focus-visible {
   padding: 1rem 1rem;
   margin: 0.5rem;
   margin-top: 0rem;
-  /* margin-right: 0rem;
-  margin-left: 0rem; */
   margin-right: 3rem;
   margin-left: -2rem;
   text-align: center;
@@ -221,9 +211,6 @@ button:focus-visible {
   word-break: nowrap;
   white-space: nowrap;
 }
-
-
-
 
 /* Desktop  normal and large screen, this is how i set things  */
 .menu-desktop,
@@ -249,67 +236,60 @@ button:focus-visible {
   margin-bottom: 1rem;
 }
 
-
-
-
-
-@media screen and (max-width: 530px){
-
-  li.menu-left-tab img{
+@media screen and (max-width: 530px) {
+  li.menu-left-tab img {
     padding-left: unset;
   }
-  .card-feature{
-   .text-content p{
-    font-size: 8px;
-    line-height: normal;
-    margin-bottom: unset;
-    font-family: inter;
-    margin-bottom: 1rem;
-   }
-   .text-content > h1{
-    font-size: 16px;
-    line-height: normal;
-    font-family: inter;
-   }
+  .card-feature {
+    .text-content p {
+      font-size: 8px;
+      line-height: normal;
+      margin-bottom: unset;
+      font-family: inter;
+      margin-bottom: 1rem;
+    }
+    .text-content > h1 {
+      font-size: 16px;
+      line-height: normal;
+      font-family: inter;
+    }
 
- .size-options span{
-  font-size: 8px;
- }
-.customer-size{
-  line-height: normal;
-  font-size: 10px;
-     padding: 4px;
-     width: 90px;
-     font-family: inter;
+    .size-options span {
+      font-size: 8px;
+    }
+    .customer-size {
+      line-height: normal;
+      font-size: 10px;
+      padding: 4px;
+      width: 90px;
+      font-family: inter;
+    }
+    .customer-option {
+      font-size: xx-small;
+      padding: unset;
+      margin-right: 40px;
+      padding: 6px;
+      font-family: inter;
+    }
+  }
 }
-.customer-option{
-  font-size: xx-small;
-  padding: unset ;
-  margin-right: 40px;
-  padding: 6px;
+.customer-option-wrapper {
+  white-space: nowrap;
+  word-break: nowrap;
+}
+.quntity-wrapper {
+  white-space: nowrap;
+  word-break: nowrap;
+  margin-left: 2rem;
+  margin-top: -3rem;
+}
+.quantity-button {
+  position: relative;
+  left: 20%;
+  white-space: nowrap;
+  word-break: nowrap;
   font-family: inter;
 }
-  }
- 
-  }
-  .customer-option-wrapper{
-    white-space: nowrap;
-    word-break: nowrap;
-  }
-  .quntity-wrapper{
-    white-space: nowrap;
-    word-break: nowrap;
-    margin-left: 2rem;
-    margin-top: -3rem;
-  }
-  .quantity-button{
-    position: relative;
-    left: 20%;
-    white-space: nowrap;
-    word-break: nowrap;
-    font-family: inter;
-  }
-
 
 /* At media responsive tab  i initially start here */
 
@@ -325,6 +305,7 @@ button:focus-visible {
     display: flex;
     width: 200px;
     height: 50px;
+    margin-left: -1.5rem;
   }
   .logo-right-tab {
     display: flex;
@@ -336,10 +317,8 @@ button:focus-visible {
     justify-content: flex-start;
   }
   .btn-resize {
-    /* font-size: 12px; */
     font-weight: 600;
     opacity: 0.9;
-    /* height: 2.5rem; */
     padding-left: 5rem !important;
     padding-right: 5rem !important;
     flex-shrink: 0;
@@ -373,7 +352,7 @@ button:focus-visible {
     white-space: nowrap;
   }
   .card-feature {
-   max-width: fit-content;
+    max-width: fit-content;
     margin: 0 auto;
   }
 
@@ -401,11 +380,11 @@ button:focus-visible {
   .footer-logo {
     display: none;
   }
-  .footer-middle h3{
+  .footer-middle h3 {
     font-size: 20px;
     font-family: inter;
   }
-  .footer-right{
+  .footer-right {
     margin-top: 1rem;
     font-size: 20px !important;
     font-family: inter;
@@ -418,19 +397,16 @@ button:focus-visible {
     margin-bottom: -4px !important;
     padding-bottom: -4px !important;
   }
-  .footer-left ul{
-  padding-left: unset;
-  padding-top: 2rem;
+  .footer-left ul {
+    padding-left: unset;
+    padding-top: 2rem;
   }
- 
+
   .footer-left ul li {
-   margin-bottom: 0.5rem !important;
- 
+    margin-bottom: 0.5rem !important;
   }
-  
 
   .footer-right {
-
     font-size: 19px;
     align-items: center;
     padding-left: 0rem;
@@ -439,40 +415,34 @@ button:focus-visible {
     font-weight: bold;
     font-family: inter;
   }
-  .footer-right ul li a{
+  .footer-right ul li a {
     color: #fff;
     text-decoration: none;
-    
   }
   .footer-right ul li {
-  line-height: 3rem;
-  
+    line-height: 3rem;
   }
-  .footer-right ul  {
-   /* margin-right: 2rem; */
-   padding-top: 2rem;
-   text-align: left;
+  .footer-right ul {
+    padding-top: 2rem;
+    text-align: left;
   }
   .footer-middle form input {
-  
     padding: 10px;
     border: none;
     border-radius: 9px;
     width: 100%;
     background: #d9d9d999;
   }
-  .footer-middle h3{
+  .footer-middle h3 {
     margin-top: -1.5rem;
-    
   }
-  .footer-middle form button{
-  height: fit-content;
-    
+  .footer-middle form button {
+    height: fit-content;
   }
-  .footer-left ul li img{
+  .footer-left ul li img {
     width: 35px;
   }
-  #footer-left-logo{
+  #footer-left-logo {
     width: 90px;
   }
   .footer-desktop {
@@ -482,9 +452,6 @@ button:focus-visible {
     background: #2b2d42;
     font-family: inter;
   }
-
-
-
 }
 
 /* mobile  responsive  initially start the view  here */
@@ -497,7 +464,6 @@ button:focus-visible {
     text-align: justify;
     margin-right: 1.5rem;
     font-weight: 700;
-   
   }
   .btn-resize {
     flex: auto 1 auto;
@@ -513,14 +479,12 @@ button:focus-visible {
     border: none;
     cursor: pointer;
     flex-basis: 5rem;
-    
   }
 
   .card-feature {
-  
     width: 100%;
   }
- 
+
   .card-feature img {
     max-width: 80vw;
   }
@@ -535,31 +499,29 @@ button:focus-visible {
   .logo-right-tab {
     display: none;
   }
- 
+
   .my-image-cover {
     background: #5e3345;
     width: 100%;
     height: 50%;
   }
 }
-.empty-cart{
+.empty-cart {
   text-align: center;
   margin-top: 1rem;
-  p{
+  p {
     color: green;
   }
 }
 /* There is break point that will scatter things so i extend the mobile view here */
 @media screen and (max-width: 590px) {
   .card-feature img {
-    
     z-index: 1;
     padding-bottom: -2rem;
   }
- 
+
   .card-feature {
     margin-bottom: 1rem;
- 
   }
   .my-image-cover {
     background: #5e3345;
@@ -569,7 +531,7 @@ button:focus-visible {
     margin-left: -1.5rem;
     padding-bottom: -2rem;
   }
-  .customer-option{
+  .customer-option {
     word-break: nowrap;
     white-space: nowrap;
   }
@@ -582,17 +544,13 @@ button:focus-visible {
     padding-right: 0.7rem !important;
     font-size: 9px;
   }
-  .customer-option{
+  .customer-option {
     word-break: nowrap;
     white-space: nowrap;
   }
+  /* .logo-right-tab{
+    display: block;
+    width: 50%;
+    height: 20px;
+  } */
 }
-
-
-
-
-
-
-
-
-
