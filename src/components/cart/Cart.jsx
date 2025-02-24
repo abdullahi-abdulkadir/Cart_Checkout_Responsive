@@ -246,7 +246,8 @@ const Cart = () => {
                   <div className="col-lg-12 text-content">
                     <h1>{product.title}</h1>
                     <p>
-                      Some product description here...
+                    Unt in culpa qui officia deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh unt in culpa qui officia
+                    deserunt mollit vjnksj nabjhbh hhbjsbhbk hnjhsh.
                     </p>
                   </div>
                   <div className="col-lg-6">
@@ -259,7 +260,7 @@ const Cart = () => {
                         </div>
                         <div className="columns">
                           <div className="quntity-wrapper">
-                            <button className="customer-option">{product.quantity}</button>
+                            <button className="customer-option " id="product-quantity-btn">{product.quantity}</button>
                             <button className="customer-option" onClick={() => quantIncrement(product.id)}>+</button>
                             <button className="customer-option" onClick={() => quantDecrement(product.id)}>-</button>
                           </div>

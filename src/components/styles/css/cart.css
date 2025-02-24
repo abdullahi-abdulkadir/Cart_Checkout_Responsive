@@ -212,6 +212,12 @@ button:focus-visible {
   white-space: nowrap;
 }
 
+#product-quantity-btn{
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
 /* Desktop  normal and large screen, this is how i set things  */
 .menu-desktop,
 .menu-left-tab,
