@@ -554,9 +554,5 @@ button:focus-visible {
     word-break: nowrap;
     white-space: nowrap;
   }
-  /* .logo-right-tab{
-    display: block;
-    width: 50%;
-    height: 20px;
-  } */
+ 
 }
