@@ -35,8 +35,8 @@ const Customesize = () => {
 
   useEffect(() => {
     localStorage.removeItem("userMeasurements");
-  }, [ ]);
-  
+  }, []);
+
   const handleRangeChange = (event) => {
     const { name, value } = event.target;
     setMeasurements((prev) => ({ ...prev, [name]: value }));
@@ -49,27 +49,27 @@ const Customesize = () => {
 
   const handleSave = () => {
     console.log("Current Measurements:", measurements); // Debugging log
-  
+
     // Ensure all fields are filled
-    const emptyFields = Object.entries(measurements).filter(([key, value]) => 
+    const emptyFields = Object.entries(measurements).filter(([key, value]) =>
       value === "" || value === undefined || value === null
     );
-  
+
     if (emptyFields.length > 0) {
       console.log("Empty fields found:", emptyFields); // Debugging log
       setError("Please fill in all required fields before saving.");
       return;
     }
-  
+
     // Save measurements
     localStorage.setItem("userMeasurements", JSON.stringify(measurements));
     alert("Measurements saved successfully!");
     navigate("/checkout", { state: { measurements } });
-  
+
     setError(""); // Clear error message
   };
-  
-  
+
+
 
   return (
     <div className="custom-size">
@@ -107,38 +107,38 @@ const Customesize = () => {
           <input type="range" name="trouserLength" min="1" max="500" value={measurements.trouserLength} onChange={handleRangeChange} required />
         </div>
         <div className="level-8">
-<label>Waist Size <span>{measurements.waistSize} cm</span></label>
-<input type="range" name="waistSize" min="1" max="500" value={measurements.waistSize} onChange={handleRangeChange} required />
-</div>
+          <label>Waist Size <span>{measurements.waistSize} cm</span></label>
+          <input type="range" name="waistSize" min="1" max="500" value={measurements.waistSize} onChange={handleRangeChange} required />
+        </div>
 
 
-<div className="level-9">
-      <label>Butt Size <span>{measurements.buttSize} cm</span></label>
-      <input type="range" name="buttSize" min="1" max="500" value={measurements.buttSize} onChange={handleRangeChange} required />
+        <div className="level-9">
+          <label>Butt Size <span>{measurements.buttSize} cm</span></label>
+          <input type="range" name="buttSize" min="1" max="500" value={measurements.buttSize} onChange={handleRangeChange} required />
+        </div>
+        <div className="level-10">
+          <label>Lap Size <span>{measurements.lapSize} cm</span></label>
+          <input type="range" name="lapSize" min="1" max="500" value={measurements.lapSize} onChange={handleRangeChange} required />
+        </div>
+        <div className='input-center'>
+          <h4> Cap Size {"\u00a0 "} {"\u00a0 "}
+            <input type='text' name='capSize' id='capSize' placeholder=' 145 cm' value={measurements.capSize} onChange={handleTextChange} required />
+          </h4>
+          <br />
+          <h4>Shoe Size {"\u00a0 "}
+            <input type='text' name='shoesSize' id='shoeSize' placeholder=' 45' value={measurements.shoesSize} onChange={handleTextChange} required />
+          </h4>
+        </div>
+        <div className="others-container">
+          <input type='text' name='otherSpecification' id="others-input" placeholder='Short Trouser/Long Trouser | Short Sleeve/Long Sleeve' value={measurements.otherSpecification} onChange={handleTextChange} required />
+        </div>
+        <br />
+        {error && <p className="error-message">{error}</p>}
+        <button type="button" className="save-btn" onClick={handleSave}>Save</button>
+      </form>
     </div>
-    <div className="level-10">
-      <label>Lap Size <span>{measurements.lapSize} cm</span></label>
-      <input type="range" name="lapSize" min="1" max="500" value={measurements.lapSize} onChange={handleRangeChange} required />
-    </div>
-    <div className='input-center'>
-      <h4> Cap Size {"\u00a0 "} {"\u00a0 "}
-        <input type='text' name='capSize' id='capSize' placeholder=' 145 cm' value={measurements.capSize} onChange={handleTextChange} required />
-      </h4>
-      <br />
-      <h4>Shoe Size {"\u00a0 "}
-        <input type='text' name='shoesSize' id='shoeSize' placeholder=' 45' value={measurements.shoesSize} onChange={handleTextChange} required />
-      </h4>
-    </div>
-    <div className="others-container">
-      <input type='text' name='otherSpecification' id="others-input" placeholder='Others Specification' value={measurements.otherSpecification} onChange={handleTextChange} required />
-    </div>
-    <br />
-    {error && <p className="error-message">{error}</p>}
-    <button type="button" className="save-btn" onClick={handleSave}>Save</button>
-  </form>
-</div>
 
-);
+  );
 };
 
 export default Customesize;
