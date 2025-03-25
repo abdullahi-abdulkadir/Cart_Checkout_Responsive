@@ -222,7 +222,7 @@ button:focus-visible {
   white-space: nowrap;
 }
 #checkout-btn{
-  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .9) ;
+  box-shadow:  0 1px 1px hsla(0, 0%, 0%, .9) ;
   background: hsl(120, 60%, 50%) ;
  
   &:hover{
