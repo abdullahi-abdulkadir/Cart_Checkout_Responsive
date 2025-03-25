@@ -1,0 +1,612 @@
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  max-width: 500rem;
+  font-size: 1em;
+  overflow-y: scroll;
+}
+body {
+  max-width: 100%;
+  height: 100vh;
+  font-size: 1rem;
+  background: #ffffff;
+  font-family: Inter, serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-y: scroll;
+}
+
+main {
+  width: 100%;
+  max-height: 80vh;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+section {
+  width: 100%;
+}
+
+.sign-out {
+  width: 7rem;
+  height: 2.6rem;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #5f0b2c;
+  margin-right: 7rem;
+}
+
+.sign-out a {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 6.2rem;
+  height: 1rem;
+}
+
+section .cart-title {
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60.51px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f8444f;
+  margin: auto;
+  margin-bottom: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+
+  gap: 0.5rem;
+}
+
+.btn-resize {
+  flex: 1;
+  background: #d9d9d999;
+  margin-bottom: 0.5rem;
+  box-shadow: 4px 4px 4px 4px #0000001a inset;
+  max-width: 18.1rem;
+  height: 5.2rem;
+  border-radius: 10px;
+  border: unset;
+}
+
+.card-feature {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  box-shadow:  0 10px 20px hsla(0, 0%, .15) ,
+   0 3px 6px hsla(0, 0%, 15) ;
+}
+
+.card-feature {
+  margin: auto;
+  background: #d9d9d9d9;
+  padding-right: unset;
+  padding-top: 30.37px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 0.7rem;
+  margin-top: 1.4rem;
+  max-width: 63rem;
+  border-radius: 15px;
+  flex: 1;
+ 
+
+}
+
+.text-content p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 40%);
+  justify-content: center;
+  text-align: justify;
+  margin-right: 2rem;
+}
+.text-content > h1 {
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.my-image-cover {
+  border-radius: 9px;
+  background: #5e3345;
+  padding-left: 0.5rem;
+  padding-right: unset;
+  padding-bottom: 0;
+  max-height: fit-content;
+}
+.card-feature img {
+  max-width: 100%;
+  min-height: 94%;
+  border-radius: 9px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.size-options span {
+  margin-top: 8rem;
+
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #f8444f;
+  border: 1px solid #ddd;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.customer-size {
+  color: #fff;
+  width: 12rem;
+  border-radius: 5px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-align: center;
+  text-underline-position: from-font;
+  margin-bottom: 3.4rem;
+  margin-top: 1rem;
+}
+
+#customsize-btn{
+  background: hsl(210, 80%, 50%) ;
+  box-shadow: inset 0 2px 0 hsl(220, 84%, 74%);
+  
+  color: #fff;
+  &:hover{
+    background: hsl(210, 80%, 40%);
+  }
+}
+
+.columns {
+  margin-top: -2rem;
+}
+
+button:focus-visible {
+  border: none;
+  outline: none;
+  cursor: none;
+}
+.customer-option {
+  background: #2b2d42;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  margin-top: 0rem;
+  margin-right: 3rem;
+  margin-left: -2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: Inter;
+  display: inline-block;
+  word-break: nowrap;
+  white-space: nowrap;
+}
+#checkout-btn{
+  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .9) ;
+  background: hsl(120, 60%, 50%) ;
+ 
+  &:hover{
+    background: hsl(120, 60%, 40%);
+  }
+}
+
+#remove-btn{
+  background: hsl(0, 0%, 90%);
+  color:hsl(0, 0%, 40%);
+  border: 1px solid hsl(0, 0%, 70%);
+  &:hover{
+    background:  hsl(0, 0%, 80%);
+    color:  hsl(0, 0%, 30%);
+    border: 1px solid  hsl(0, 0%, 60%);;
+  }
+}
+
+#product-quantity-btn{
+  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
+  background: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 70%);
+  color: #000;
+}
+
+#product-quantity-btn3{
+  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
+  background: hsl(0, 0%, 70%);
+  border: 1px solid transparent;
+  color: #000;
+  font-weight: bolder;
+  &:hover{
+    background: hsl(0, 0%, 20%);
+    border: 1px solid;
+    color: #fff;
+  }
+}
+#product-quantity-btn2{
+  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
+  background: hsl(120, 60%, 50%);
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: bolder;
+  &:hover{
+    background: hsl(120, 60%, 20%);
+  }
+}
+
+
+/* Desktop  normal and large screen, this is how i set things  */
+.menu-desktop,
+.menu-left-tab,
+.logo-right-tab {
+  display: none;
+}
+.logo-desktop {
+  margin-left: 6.5rem;
+}
+
+.footer-mobile {
+  display: none;
+}
+.footer-logo {
+  display: none;
+}
+#mobile-news {
+  display: none;
+}
+.footer-left ul li:not(:first-child) {
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 530px) {
+  li.menu-left-tab img {
+    padding-left: unset;
+  }
+  .card-feature {
+    .text-content p {
+      font-size: 8px;
+      line-height: normal;
+      margin-bottom: unset;
+      font-family: inter;
+      margin-bottom: 1rem;
+    }
+    .text-content > h1 {
+      font-size: 16px;
+      line-height: normal;
+      font-family: inter;
+    }
+
+    .size-options span {
+      font-size: 8px;
+    }
+    .customer-size {
+      line-height: normal;
+      font-size: 10px;
+      padding: 4px;
+      width: 90px;
+      font-family: inter;
+    }
+    .customer-option {
+      font-size: xx-small;
+      padding: unset;
+      margin-right: 40px;
+      padding: 6px;
+      font-family: inter;
+    }
+  }
+}
+.customer-option-wrapper {
+  white-space: nowrap;
+  word-break: nowrap;
+}
+.quntity-wrapper {
+  white-space: nowrap;
+  word-break: nowrap;
+  margin-left: 2rem;
+  margin-top: -3rem;
+}
+.quantity-button {
+  position: relative;
+  left: 20%;
+  white-space: nowrap;
+  word-break: nowrap;
+  font-family: inter;
+}
+
+/* At media responsive tab  i initially start here */
+
+@media screen and (max-width: 900px) {
+  .group {
+    display: none;
+  }
+  .logo-desktop {
+    display: none;
+  }
+  .menu-left-tab,
+  .logo-right-tab {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-left: -1.5rem;
+  }
+  .logo-right-tab {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+  }
+  .menu-left-tab {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .btn-resize {
+    font-weight: 600;
+    opacity: 0.9;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: unset;
+    border: none;
+    cursor: pointer;
+  }
+  .text-contents h1 {
+    font-weight: 100 !important;
+    font-size: 25px;
+    margin-top: unset;
+  }
+  .text-content p {
+    text-align: justify;
+    margin-right: 1.5rem;
+    font-weight: 800;
+    line-height: 20px;
+  }
+  .size-options span {
+    padding: 0.3rem;
+  }
+  .customer-size {
+    width: 8rem;
+    padding: 0 0.01rem;
+    margin-top: 0rem;
+  }
+  .customer-option {
+    padding: 0.6rem 0.5rem;
+    word-break: nowrap;
+    white-space: nowrap;
+  }
+  .card-feature {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  section .cart-title {
+    font-size: 25px;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .card-feature img {
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+  }
+  .my-image-cover {
+    background: #5e3345;
+    width: 50%;
+    height: 50%;
+  }
+  .card-feature {
+    margin-bottom: 1rem;
+  }
+  .footer-desktop {
+    margin-right: 0;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-middle h3 {
+    font-size: 20px;
+    font-family: inter;
+  }
+  .footer-right {
+    margin-top: 1rem;
+    font-size: 20px !important;
+    font-family: inter;
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+  .footer-left {
+    margin-bottom: unset;
+    padding-bottom: unset;
+    margin-bottom: -4px !important;
+    padding-bottom: -4px !important;
+  }
+  .footer-left ul {
+    padding-left: unset;
+    padding-top: 2rem;
+  }
+
+  .footer-left ul li {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .footer-right {
+    font-size: 19px;
+    align-items: center;
+    padding-left: 0rem;
+    line-height: 30px;
+    text-align: right;
+    font-weight: bold;
+    font-family: inter;
+  }
+  .footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-right ul li {
+    line-height: 3rem;
+  }
+  .footer-right ul {
+    padding-top: 2rem;
+    text-align: left;
+  }
+  .footer-middle form input {
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    width: 100%;
+    background: #d9d9d999;
+  }
+  .footer-middle h3 {
+    margin-top: -1.5rem;
+  }
+  .footer-middle form button {
+    height: fit-content;
+  }
+  .footer-left ul li img {
+    width: 35px;
+  }
+  #footer-left-logo {
+    width: 90px;
+  }
+  .footer-desktop {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background: #2b2d42;
+    font-family: inter;
+  }
+}
+
+/* mobile  responsive  initially start the view  here */
+
+@media screen and (max-width: 770px) {
+  .text-content > h1 {
+    font-size: 1.5rem;
+  }
+  .text-content p {
+    text-align: justify;
+    margin-right: 1.5rem;
+    font-weight: 700;
+  }
+  .btn-resize {
+    flex: auto 1 auto;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.9;
+    height: 2.5rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: unset;
+    border: none;
+    cursor: pointer;
+    flex-basis: 5rem;
+  }
+
+  .card-feature {
+    width: 100%;
+  }
+
+  .card-feature img {
+    max-width: 80vw;
+  }
+  .customer-option {
+    font-weight: bold;
+    font-family: inter;
+    font-size: small;
+    overflow: hidden;
+    word-break: nowrap;
+    white-space: nowrap;
+  }
+  .logo-right-tab {
+    display: none;
+  }
+
+  .my-image-cover {
+    background: #5e3345;
+    width: 100%;
+    height: 50%;
+  }
+}
+.empty-cart {
+  text-align: center;
+  margin-top: 1rem;
+  p {
+    color: green;
+  }
+}
+/* There is break point that will scatter things so i extend the mobile view here */
+@media screen and (max-width: 590px) {
+  .card-feature img {
+    z-index: 1;
+    padding-bottom: -2rem;
+  }
+
+  .card-feature {
+    margin-bottom: 1rem;
+  }
+  .my-image-cover {
+    background: #5e3345;
+
+    width: 60%;
+    height: auto;
+    margin-left: -1.5rem;
+    padding-bottom: -2rem;
+  }
+  .customer-option {
+    word-break: nowrap;
+    white-space: nowrap;
+  }
+}
+
+/* i extend my btn  at the media to fit  minimun screen here */
+@media screen and (max-width: 380px) {
+  .btn-resize {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    font-size: 9px;
+  }
+  .customer-option {
+    word-break: nowrap;
+    white-space: nowrap;
+  }
+ 
+}
