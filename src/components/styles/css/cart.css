@@ -398,7 +398,7 @@ button:focus-visible {
 
   section .cart-title {
     font-size: 25px;
-    margin-top: -1.3rem;
+    margin-top: -1.1rem;
     margin-bottom: -0.5rem;
   }
   .card-feature img {
@@ -580,8 +580,8 @@ button:focus-visible {
 /* i extend my btn  at the media to fit  minimun screen here */
 @media screen and (max-width: 380px) {
   .btn-resize {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important; 
+    padding-left: 1.8rem !important;
+    padding-right: 1.8rem !important; 
     font-size: 9px;
   }
   .customer-option {
