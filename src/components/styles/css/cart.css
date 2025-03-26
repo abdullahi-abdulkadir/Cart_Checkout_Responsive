@@ -580,8 +580,8 @@ button:focus-visible {
 /* i extend my btn  at the media to fit  minimun screen here */
 @media screen and (max-width: 380px) {
   .btn-resize {
-    padding-left: 1.8rem !important;
-    padding-right: 1.8rem !important; 
+    padding-left: 2rem !important;
+    padding-right: 2rem !important; 
     font-size: 9px;
   }
   .customer-option {
