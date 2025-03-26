@@ -91,8 +91,6 @@ section .cart-title {
   display: flex;
   flex-direction: row;
   gap: 0rem;
-  box-shadow:  0 10px 20px hsla(0, 0%, .15) ,
-   0 3px 6px hsla(0, 0%, 15) ;
 }
 
 .card-feature {
@@ -107,8 +105,6 @@ section .cart-title {
   max-width: 63rem;
   border-radius: 15px;
   flex: 1;
- 
-
 }
 
 .text-content p {
@@ -120,7 +116,7 @@ section .cart-title {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-  color: hsl(0, 0%, 40%);
+  color: #000;
   justify-content: center;
   text-align: justify;
   margin-right: 2rem;
@@ -183,13 +179,11 @@ section .cart-title {
   margin-top: 1rem;
 }
 
-#customsize-btn{
-  background: hsl(210, 80%, 50%) ;
-  box-shadow: inset 0 2px 0 hsl(220, 84%, 74%);
-  
+#customsize-btn {
+  background: #2b2d42;
   color: #fff;
-  &:hover{
-    background: hsl(210, 80%, 40%);
+  &:hover {
+    background: #000;
   }
 }
 
@@ -221,55 +215,42 @@ button:focus-visible {
   word-break: nowrap;
   white-space: nowrap;
 }
-#checkout-btn{
-  background: hsl(120, 60%, 50%) ;
- 
-  &:hover{
-    background: hsl(120, 60%, 40%);
+#checkout-btn {
+  background: 2b2d42;
+
+  &:hover {
+    background: #000;
   }
 }
 
-#remove-btn{
-  background: hsl(0, 0%, 90%);
-  color:hsl(0, 0%, 40%);
-  border: 1px solid hsl(0, 0%, 70%);
-  &:hover{
-    background:  hsl(0, 0%, 80%);
-    color:  hsl(0, 0%, 30%);
-    border: 1px solid  hsl(0, 0%, 60%);;
-  }
-}
-
-#product-quantity-btn{
-  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
-  background: hsl(0, 0%, 90%);
-  border: 1px solid hsl(0, 0%, 70%);
-  color: #000;
-}
-
-#product-quantity-btn3{
-  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
-  background: hsl(0, 0%, 70%);
-  border: 1px solid transparent;
-  color: #000;
-  font-weight: bolder;
-  &:hover{
-    background: hsl(0, 0%, 20%);
-    border: 1px solid;
-    color: #fff;
-  }
-}
-#product-quantity-btn2{
-  box-shadow:  0 1px 3px hsla(0, 0%, 0%, .2) ;
-  background: hsl(120, 60%, 50%);
-  border: 1px solid transparent;
+#remove-btn {
+  background: #f8444f;
   color: #fff;
-  font-weight: bolder;
-  &:hover{
-    background: hsl(120, 60%, 20%);
+
+  &:hover {
+    background: #e63b3b;
   }
 }
 
+#product-quantity-btn1 {
+  background: #2b2d42;
+  &:hover {
+    background: #000;
+  }
+}
+
+#product-quantity-btn2 {
+  background: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 70%);
+  color: #000;
+}
+
+#product-quantity-btn3 {
+  background: #2b2d42;
+  &:hover {
+    background: #000;
+  }
+}
 
 /* Desktop  normal and large screen, this is how i set things  */
 .menu-desktop,
@@ -417,7 +398,7 @@ button:focus-visible {
 
   section .cart-title {
     font-size: 25px;
-    margin-top: -0.5rem;
+    margin-top: -1.3rem;
     margin-bottom: -0.5rem;
   }
   .card-feature img {
@@ -599,13 +580,12 @@ button:focus-visible {
 /* i extend my btn  at the media to fit  minimun screen here */
 @media screen and (max-width: 380px) {
   .btn-resize {
-    padding-left: 0.7rem !important;
-    padding-right: 0.7rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important; 
     font-size: 9px;
   }
   .customer-option {
     word-break: nowrap;
     white-space: nowrap;
   }
- 
 }

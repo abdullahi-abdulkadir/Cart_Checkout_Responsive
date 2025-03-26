@@ -100,21 +100,22 @@ const Cart = () => {
                       <div className="size-options">
                         <div>
                           <button type="button" className="btn customer-size" id="customsize-btn" onClick={() => customRedir('/customsize')}>
-                            Custom Size
+                            CUSTOM SIZE
                           </button>
                         </div>
                         <div className="columns">
                           <div className="quntity-wrapper">
                             
                             
-                            <button className="customer-option" id="product-quantity-btn3" onClick={() => quantDecrement(product.id)}>-</button>
-                            <button className="customer-option " id="product-quantity-btn">{product.quantity}</button>
-                            <button className="customer-option"  id="product-quantity-btn2" onClick={() => quantIncrement(product.id)}>+</button>
+                            <button className="customer-option" id="product-quantity-btn1" onClick={() => quantDecrement(product.id)}>-</button>
+                            <button className="customer-option " id="product-quantity-btn2" >{product.quantity}</button>
+                            <button className="customer-option"  id="product-quantity-btn3" onClick={() => quantIncrement(product.id)}>+</button>
                           </div>
                           <ul className="customer-option-wrapper">
+                          <li className="customer-option" id="remove-btn" onClick={() => removeItem(product.id)}>REMOVE</li>
+                          <li className="customer-option" id="checkout-btn" onClick={checkOut}>CHECK OUT</li>
                            
-                            <li className="customer-option" id="remove-btn" onClick={() => removeItem(product.id)}>Remove</li>
-                            <li className="customer-option" id="checkout-btn" onClick={checkOut}>Check Out</li>
+                     
                           </ul>
                         </div>
                       </div>
